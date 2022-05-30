@@ -1,0 +1,21 @@
+version: "3.10"
+services:
+  worker:
+    build: .
+    environment:
+      - API_HASH=${API_HASH}
+      - API_ID=${API_ID}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - LOG_CHANNEL=${LOG_CHANNEL}
+      - DATABASE_URL=${DATABASE_URL}
+      - AUTH_USERS=${AUTH_USERS}
+      - HOST=${HOST}
+      - SESSION_NAME=${SESSION_NAME}
+      - MAX_PROCESSES_PER_USER=${MAX_PROCESSES_PER_USER}
+      - MAX_TRIM_DURATION=${MAX_TRIM_DURATION}
+      - TRACK_CHANNEL=${TRACK_CHANNEL}
+      - SLOW_SPEED_DELAY=${SLOW_SPEED_DELAY}
+      - TIMEOUT=${TIMEOUT}
+      - DEBUG=${DEBUG}
+      - IAM_HEADER=${IAM_HEADER}
+      - WORKER_COUNT=${WORKER_COUNT}
